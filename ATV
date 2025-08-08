@@ -1,0 +1,24 @@
+def v_absoluto (x):
+    # x_asbsoluto = abs(x)
+    if x < 0:
+        x_absoluto = -x
+    else:
+        x_absoluto = x
+    return x_absoluto
+
+def cauculo_idade(i):
+    cauculo = 2025 - i
+    return cauculo
+
+if __name__ == "__main__":
+    escolha = int (input("(1) Valor absoluto ou (2) cauculo de idade ou (3) "))
+
+    if escolha == 1:
+        x = float(input("Insira o valor: "))
+        retorno = v_absoluto(x)
+        print("O valor:", x, ", absoluto é:", retorno)
+
+    if escolha == 2:
+        i = int(input("Ano de nascimento (ex 1980): "))
+        retorno = cauculo_idade(i)
+        print("Idade é", retorno)
